@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PavanPutra</title>
+    <link rel="stylesheet" href="FB.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+      
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="head">
+        <div class="head-logo">
+            <div class="logo-img"><img src="img/com-logo-semi-final.png" alt=""></div>
+        </div>
+
+        <nav class="nav-bar">
+            <div class="menu-icon" onclick="toggleMenu()" title="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-list" id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Tours</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="sec-1">
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1" checked>
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <div class="slide first">
+                        <img src="img/dubai-img-frontpage.png" alt="Image 1">
+                        <a href="#" class="watch-now-btn">Book Now</a>
+                    </div>
+                    <div class="slide">
+                        <img src="img/kashmir-img2.jpg" alt="Image 2">
+                        <a href="#" class="watch-now-btn">Book Now</a>
+                    </div>
+                    <div class="slide">
+                        <img src="img/singapore2.jpg" alt="Image 3">
+                        <a href="#" class="watch-now-btn">Book Now</a>
+                    </div>
+                    <div class="slide">
+                        <img src="img/switzerland1.jpg" alt="Image 4">
+                        <a href="#" class="watch-now-btn">Book Now</a>
+                    </div>
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+
+                <a class="prev" onclick="moveSlides(-1)">&#10094;</a>
+                <a class="next" onclick="moveSlides(1)">&#10095;</a>
+            </div>
+        </section>
+        <!-- section - 2: It will contain tour packages to show to user -->
+        <section class="sec-2">
+            <!-- section-2: heading -->
+            <div class="sec-2-head">
+                <h1 class="sec-2-head-txt">Special Tour Packages</h1>
+            </div>
+
+            <!-- section-2: boxes containing place information -->
+            <div class="sec-2-box-container">
+                <div class="sec-2-box sec-2-box1">
+                    <img src="img/box-img-.jpg" alt="singapore">
+                    <div class="sec-2-box-info">
+                        <h1 class="info-place-txt">Singapore</h1>
+                        <p class="info-days-txt">Days: 7 days</p>
+                        <p class="info-price-txt">Starting From: INR 1,12,000/-</p>
+                    </div>
+                </div>
+                <div class="sec-2-box sec-2-box1">
+                    <img src="img/box-img-4.jpg" alt="ayodhya">
+                    <div class="sec-2-box-info">
+                        <h1 class="info-place-txt">Ayodhya</h1>
+                        <p class="info-days-txt">Days: 2 days</p>
+                        <p class="info-price-txt">Starting From: INR 16,000/-</p>
+                    </div>
+                </div>
+                <div class="sec-2-box sec-2-box1">
+                    <img src="img/box-img-3.jpg" alt="bali">
+                    <div class="sec-2-box-info">
+                        <h1 class="info-place-txt">Bali</h1>
+                        <p class="info-days-txt">Days: 10 days</p>
+                        <p class="info-price-txt">Starting From: INR 1,18,000/-</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec-3">
+            <div class="sec-3-head">
+                <h1 class="sec-3-head-txt">Todays Top Deal</h1>
+            </div>
+
+            <div class="sec-3-box-container">
+                <div class="sec-3-box sec-3-box1">
+                    <img src="img/dubai-2.jpg" alt="dubai">
+                    <div class="sec-3-box-info">
+                        <h1 class="sec-3-box-info-head">Dubai</h1>
+                        <p class="sec-3-box-info-txt">Days: 7days</p>
+                        <p class="sec-3-box-info-txt">Startin From: INR 96,000/-</p>
+                    </div>
+                </div>
+                <div class="sec-3-box sec-3-box1">
+                    <img src="img/uk-img.jpg" alt="UK">
+                    <div class="sec-3-box-info">
+                        <h1 class="sec-3-box-info-head">UK</h1>
+                        <p class="sec-3-box-info-txt">Days: 7days</p>
+                        <p class="sec-3-box-info-txt">Startin From: INR 1,15,000/-</p>
+                    </div>
+                </div>
+                <div class="sec-3-box sec-3-box1">
+                    <img src="img/hp-img.jpeg" alt="Himachal pradesh">
+                    <div class="sec-3-box-info">
+                        <h1 class="sec-3-box-info-head">Himachal Pradesh</h1>
+                        <p class="sec-3-box-info-txt">Days: 5days</p>
+                        <p class="sec-3-box-info-txt">Startin From: INR 15,000/-</p>
+                    </div>
+                </div>
+                <div class="sec-3-box sec-3-box1">
+                    <img src="img/ginrar-img.jpg" alt="Girnar">
+                    <div class="sec-3-box-info">
+                        <h1 class="sec-3-box-info-head">Girnar</h1>
+                        <p class="sec-3-box-info-txt">Days: 3days</p>
+                        <p class="sec-3-box-info-txt">Startin From: INR 6,000/-</p>
+                    </div>
+                </div>
+                <div class="sec-3-box sec-3-box1">
+                    <img src="img/paris-img.jpg" alt="dubai">
+                    <div class="sec-3-box-info">
+                        <h1 class="sec-3-box-info-head">Paris</h1>
+                        <p class="sec-3-box-info-txt">Days: 7days</p>
+                        <p class="sec-3-box-info-txt">Startin From: INR 1,02,000/-</p>
+                    </div>
+                </div>
+                <div class="sec-3-box sec-3-box1">
+                    <img src="img/jaisalmer-img.jpg" alt="dubai">
+                    <div class="sec-3-box-info">
+                        <h1 class="sec-3-box-info-head">Jaisalmer</h1>
+                        <p class="sec-3-box-info-txt">Days: 5days</p>
+                        <p class="sec-3-box-info-txt">Startin From: INR 12,000/-</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-4">
+            <div class="sec-4-head">
+                <h1 class="sec-4-head-txt">Why Choose Us?</h1>
+            </div>
+
+            <div class="sec-4-box-container">
+                <div class="sec-4-box">
+                    <div class="sec-4-box-head">
+                        <img src="img/icon-1-removebg-preview.png" alt="icon">
+                        <h2>Value for Money</h2>
+                    </div>
+                    <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum quidem consequuntur libero. Quisquam vel delectus neque velit possimus, eaque consequatur quibusdam aliquam nesciunt dolorum accusantium excepturi voluptatum fugiat omnis saepe!</p>
+                </div>
+                <div class="sec-4-box">
+                    <div class="sec-4-box-head">
+                        <img src="img/icon-2-removebg-preview.png" alt="icon">
+                        <h2>Sustainable Travel</h2>
+                    </div>
+                    <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum quidem consequuntur libero. Quisquam vel delectus neque velit possimus, eaque consequatur quibusdam aliquam nesciunt dolorum accusantium excepturi voluptatum fugiat omnis saepe!</p>
+                </div>
+                <div class="sec-4-box">
+                    <div class="sec-4-box-head">
+                        <img src="img/icon-3.png" alt="icon">
+                        <h2>Expert Guidence</h2>
+                    </div>
+                    <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum quidem consequuntur libero. Quisquam vel delectus neque velit possimus, eaque consequatur quibusdam aliquam nesciunt dolorum accusantium excepturi voluptatum fugiat omnis saepe!</p>
+                </div>
+                <div class="sec-4-box">
+                    <div class="sec-4-box-head">
+                        <img src="img/icon-5-removebg-preview.png" alt="icon">
+                        <h2>24/7 Support</h2>
+                    </div>
+                    <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum quidem consequuntur libero. Quisquam vel delectus neque velit possimus, eaque consequatur quibusdam aliquam nesciunt dolorum accusantium excepturi voluptatum fugiat omnis saepe!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="foot">
+        <div class="foot-details">
+            <div class="foot-address">
+                <h1 class="foot-address-head">Address:</h1>
+                <h2 class="foot-address-txt">Him Travels</h2>
+                <p class="foot-address-txt">xyz complex, abc place, Ahmedabad - 380007</p>
+            </div>
+            <div class="foot-contact-details">
+                <h1 class="font-contact-head">Contact On: </h1>
+                <h3 class="font-contact-txt">Himesh Jadav: 9328920646</h3>
+                <h3 class="font-contact-txt">Nirav Thapa: 1234567890</h3>
+            </div>
+        </div>
+        <div class="foot-low">
+            <div class="upper-foot">
+                <div class="follow">
+                    <h2>Follow Us</h2>
+                </div>
+                <div class="logo">
+                    <div class="git-logo">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="insta-logo">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="face-logo">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="you-logo">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="lower-foot">
+                <p>COPYRIGHTS&copy; HIM TRAVELS | 2024</p>
+                <p>Made With 🖤 By HIM.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    document.querySelector('.menu-icon').addEventListener('click', function () {
+        const navList = document.querySelector('.nav-list');
+        navList.classList.toggle('show');
+    });
+</script>
+<script>
+    let counter = 1;
+    let interval;
+
+    function autoSlide() {
+        interval = setInterval(() => {
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+            document.getElementById('radio' + counter).checked = true;
+            moveSlides(0); // Update slide position
+        }, 5000);
+    }
+
+    function moveSlides(n) {
+        clearInterval(interval); // Clear the interval to reset timing
+        counter += n;
+        if (counter > 4) {
+            counter = 1;
+        } else if (counter < 1) {
+            counter = 4;
+        }
+        document.getElementById('radio' + counter).checked = true;
+        const firstSlide = document.querySelector('.slide.first');
+        const marginValue = -((counter - 1) * 20) + '%';
+        firstSlide.style.marginLeft = marginValue;
+        autoSlide(); // Restart auto sliding
+    }
+
+    autoSlide(); // Start automatic sliding initially
+</script>
+
+</html>
